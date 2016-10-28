@@ -1,5 +1,11 @@
 # Tools assisting migration of stuff from Trac to GitHub
 
+[![Build Status](https://travis-ci.org/mbojan/trac2gh.png?branch=master)](https://travis-ci.org/mbojan/trac2gh)
+[![Build Status](https://ci.appveyor.com/api/projects/status/  xxx ?svg=true)](https://ci.appveyor.com/project/mbojan/trac2gh)
+[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/trac2gh?color=2ED968)](http://cranlogs.r-pkg.org/)
+[![cran version](http://www.r-pkg.org/badges/version/trac2gh)](https://cran.r-project.org/package=trac2gh)
+
+
 This is R package assiting semi-automatic migration of code Subversion+Trac to GitHub.
 
 Migrating from Trac+SVN to GitHub usually involves moving the following items:
