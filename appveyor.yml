@@ -1,5 +1,7 @@
 environment:
   R_CHECK_ARGS: --no-build-vignettes --no-manual
+  GITHUB_PAT:
+    secure: tJ7T62qzDAM58XyadTuFzqT5bApwLjbKysX6Jll+WJKkBLsXccmI724201RCpWIy
 
 init:
   ps: |
