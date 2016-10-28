@@ -1,7 +1,3 @@
-environment:
-  R_CHECK_ARGS: --no-build-vignettes --no-manual
-  GITHUB_PAT:
-    secure: tJ7T62qzDAM58XyadTuFzqT5bApwLjbKysX6Jll+WJKkBLsXccmI724201RCpWIy
 
 init:
   ps: |
@@ -10,6 +6,16 @@ init:
         Import-Module '..\appveyor-tool.ps1'
 install:
   ps: Bootstrap
+
+# Customize below
+
+environment:
+  global:
+    NOT_CRAN: true
+    USE_RTOOLS: true
+    R_CHECK_ARGS: --no-build-vignettes --no-manual
+    GITHUB_PAT:
+      secure: tJ7T62qzDAM58XyadTuFzqT5bApwLjbKysX6Jll+WJKkBLsXccmI724201RCpWIy
 
 build_script:
   - travis-tool.sh install_deps
