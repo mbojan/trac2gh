@@ -1,0 +1,13 @@
+Package: trac2gh
+Title: Assisting Migrating Code and Tickets from Trac to GitHub
+Version: 0.9-0
+Authors@R: person("Michal", "Bojanowski", role=c("aut", "cre"), email="michal2992@gmail.com")
+Description: Migrating code and tickets from Trac to GitHub.
+Depends:
+    R (>= 3.3.1)
+Imports: lubridate, knitr, httr, xml2, dplyr, utils, stringi, github
+Suggests: testthat
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
