@@ -21,4 +21,4 @@ f <- {{{link_issue_function}}}
 r <- gsubfn("#[0-9]+", f, l)
 
 
-cat(r, file=stdout())
+cat(r, file=stdout(), sep="\n")
