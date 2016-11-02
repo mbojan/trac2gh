@@ -16,7 +16,7 @@ make_script(issue_data, outfile = "", fun = link_issue,
 
 \item{script_template}{path to script template}
 
-\item{...}{other arguments passed to \code{\link{whisker_render}}}
+\item{...}{other arguments passed to \code{\link{whisker.render}}}
 }
 \value{
 Nothing

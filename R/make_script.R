@@ -4,7 +4,7 @@
 #' @param outfile output file name
 #' @param fun function performing actual rewriting
 #' @param script_template path to script template
-#' @param ... other arguments passed to \code{\link{whisker_render}}
+#' @param ... other arguments passed to \code{\link{whisker.render}}
 #' 
 #' @details
 #' This function uses \pkg{whisker} templating mechanism to generate a script
