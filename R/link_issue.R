@@ -29,9 +29,9 @@ link_issue <- function(ticket_id, db) {
   stopifnot("trac_ticket_id" %in% names(db))
   stopifnot("gh_issue_number" %in% names(db))
   ticket_id <- as.numeric( gsub("#", "", ticket_id) )
-  known <- ticket_id %in% db$trac_ticket_id
+  known <- ticket_id %in% db[,"trac_ticket_id"]
   if(known) {
-    s <- subset(db, trac_ticket_id == ticket_id)
+    s <- filter_(db, ~trac_ticket_id == ticket_id)
     rval <- paste0(
       "#", s$gh_issue_number[1], " ",
       "[Trac:", ticket_id, "]"
