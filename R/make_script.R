@@ -26,11 +26,12 @@ make_script <- function(issue_data, outfile="", fun=link_issue,
   } else
     l <- readLines(script_template)
   tmp <- paste(l, collapse="\n")
+  formals(fun)$db <- as.symbol("d")
   r <- whisker::whisker.render(
     tmp, 
     data=list(
-      issue_data = deparse(issue_data),
-      link_issue_function = deparse(fun)
+      issue_data = paste(deparse(issue_data), collapse="\n"),
+      link_issue_function = paste(deparse(fun), collapse="\n")
     ),
     ...
   )
