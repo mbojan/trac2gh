@@ -25,7 +25,7 @@
 #' 
 #' @export
 
-link_issue <- function(ticket_id, db=issues) {
+link_issue <- function(ticket_id, db) {
   stopifnot("trac_ticket_id" %in% names(db))
   stopifnot("gh_issue_number" %in% names(db))
   ticket_id <- as.numeric( gsub("#", "", ticket_id) )

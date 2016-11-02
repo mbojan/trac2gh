@@ -4,7 +4,7 @@
 \alias{link_issue}
 \title{Linking issues in commit messages}
 \usage{
-link_issue(ticket_id, db = issues)
+link_issue(ticket_id, db)
 }
 \arguments{
 \item{ticket_id}{character string of the form \code{#123}}
