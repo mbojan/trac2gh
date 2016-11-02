@@ -10,16 +10,13 @@ open(con)
 
 l <- readLines(con)
 
-# to be dynamically inserted
-d <- data.frame(
-  id1 = 1:5,
-  id2 = 5:1
-)
+# Data
+# Must be 'd'
+{{{issue_data}}}
 
-f <- function(x) {
-  n <- as.numeric(gsub("#", "", x))
-  paste0("hash:", n)
-}
+# Function
+# must be f(x, db=d)
+{{{link_issue_function}}}
 
 r <- gsubfn("#[0-9]+", f, l)
 
