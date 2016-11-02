@@ -12,11 +12,11 @@ l <- readLines(con)
 
 # Data
 # Must be 'd'
-{{{issue_data}}}
+d <- {{{issue_data}}}
 
 # Function
 # must be f(x, db=d)
-{{{link_issue_function}}}
+f <- {{{link_issue_function}}}
 
 r <- gsubfn("#[0-9]+", f, l)
 

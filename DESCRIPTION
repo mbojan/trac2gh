@@ -5,7 +5,7 @@ Authors@R: person("Michal", "Bojanowski", role=c("aut", "cre"), email="michal299
 Description: Migrating code and tickets from Trac to GitHub.
 Depends:
     R (>= 3.3.1)
-Imports: lubridate, knitr, httr, xml2, dplyr, utils, stringi, github
+Imports: lubridate, knitr, httr, xml2, dplyr, utils, stringi, github, whisker
 Suggests: testthat
 License: MIT + file LICENSE
 Encoding: UTF-8
