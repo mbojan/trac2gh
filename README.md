@@ -23,6 +23,7 @@ Migrating from Trac+SVN to GitHub usually involves moving the following items:
 - Trac pseudo-API allowing fetching milestone and ticket data from Trac non-interactively: `trac_api()`, `get_trac_tickets()`, `get_trac_milestones()`
 - Converting milestones and tickets to GitHub milestones and issues adding cross-system links etc.: `make_gh_issues()`, `make_gh_milestones()`
 - Pushing created milestones and issues directly to GitHub: `push_gh_milestones()`, `push_gh_issues()`.
+- Filtering commit messages and replacing ticket references with issue references: `make_script`
 
 
 # Dim lights
