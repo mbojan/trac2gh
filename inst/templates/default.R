@@ -3,6 +3,7 @@
 suppressMessages({
   library(trac2gh)
   library(gsubfn)
+  library(dplyr)
 })
 
 con <- file("stdin", blocking=TRUE)
